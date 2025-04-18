@@ -1,10 +1,19 @@
 body {
     background-color: #fff;
 }
+:root {
+    
+}
 #titler {
-    margin: 20px;
+   margin: 20px;
+   text-align: center;
+   font-size: 1.5vw;
+}
+#finished {
+    font-size: 1vw;
 }
 #goodMorning {
-    left: 50vw;
-    right: 50vw;
+    font-size: 10;
+    margin-top: 23vh;
+    margin-bottom: 0px;
 }
