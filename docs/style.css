@@ -1,5 +1,10 @@
+@font-face {
+    font-family: fonter;
+    src: url(font.ttf);
+}
 body {
     background-color: #fff;
+    font-family: fonter;
 }
 :root {
     
