@@ -3,7 +3,8 @@
     src: url(font.ttf);
 }
 body {
-    background-color: #fff;
+    background-color: #000;
+    font-weight: 700;
     font-family: fonter;
 }
 #titler {
