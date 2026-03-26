@@ -1,6 +1,6 @@
 @font-face {
     font-family: fonter;
-    src: url(font.ttf);
+    src: url(https://crazyblue7.github.io/websites/font.ttf);
 }
 body {
     background-color: #000;
@@ -10,13 +10,16 @@ body {
 #titler {
    margin: 20px;
    text-align: center;
-   font-size: 1.5vw;
+   font-size: 20px;
 }
 #finished {
-    font-size: 1vw;
+    font-size: 15px;
 }
 #goodMorning {
-    font-size: 10;
+    font-size: 60px;
     margin-top: 23vh;
     margin-bottom: 0px;
+}
+.butn {
+    font-size: 20px;
 }

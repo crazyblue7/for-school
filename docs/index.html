@@ -2,18 +2,50 @@
 <html>
     <head>
         <title>Portfólio</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://crazyblue7.github.io/styling.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" href="me.jpg">
     </head>
     <body id="portfolio">
         <div id="titler">
             <p id="finished">não terminei ainda :|</p>
+            <button onclick="window.location.href = 'http://127.0.0.1:5500/docs/index.html'">e</button>
             <h1 id="goodMorning">Bom dia!</h1>
-            <div>Eu sou o Vincenzo, e é um <div class="comic">prazer</div> te conhecer!!</div>
-            <image width=300px height=200px src="me.jpg">
+            <div>Eu sou o Vincenzo, e é<br>um prazer te conhecer!!</div>
+            <image width=300px height=200px src="me.jpg"><br>
+            <button class="butn" onclick="nextpart();">proximo</button>
+            <p style="font-size: 1500px"></p>
+            <p id="theMe"></p>
+            <h3><strong style="font-size: 40px">EU</strong></h3>
+            <p>tenho uma empresa chamado Mewo Corporation</p>
+            <img src="logo.png" width="130" style="margin-top: 30px" alt="">
+            <img src="wallpaper.png" width="200" style="margin-top: 0" alt="">
         </div>
     </body>
-    <script src="https://crazyblue7.github.io/script.js"></script>
+    
+
+    <!-- ok here is my js code -->
+    <script>
+        /// page load millis since unix epoch i think and sleep func
+        let pageLoadTime = Date.now();
+        function sleep(sleepMilliseconds) {
+            let millisStartSleep = Date.now();
+            while ( Date.now() - millisStartSleep <= sleepMilliseconds ) { }
+            return 0;
+        }
+        sleep(100);
+        
+        /// part management
+        
+        let currentpart = "title";
+
+        function nextpart() {
+            if ( currentpart == "title" ) {
+                window.location.href = window.location.href + "#theMe";
+            }
+            return 0;
+        }
+    </script>
+    <!-- <script src="https://crazyblue7.github.io/script.js"></script> -->
      <!-- <script src="../../crazyblue7.github.io/script.js"></script> -->
 </html>
