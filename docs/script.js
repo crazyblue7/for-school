@@ -39,8 +39,10 @@ function nextpart(part) {
         window.location.href = window.location.href.replaceAll("#theMe","#thedeclarationthing");
     } else if ( part == 0 ) {
         window.location.href = window.location.href.replaceAll("#theMe","#titler");
-    } else if ( part == 0 ) {
-        window.location.href = window.location.href.replaceAll("#thedeclarationthing","the-representation-of-me");
+    } else if ( part == 3 ) {
+        window.location.href = window.location.href.replaceAll("#thedeclarationthing","#the-representation-of-me");
+    } else if ( part == 4 ) {
+        window.location.href = window.location.href.replaceAll("#the-representation-of-me","#thepointsofstrong");
     }
     return 0;
 }
