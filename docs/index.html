@@ -7,25 +7,70 @@
         <link rel="icon" href="me.jpg">
     </head>
     <body id="portfolio">
+        <div id="passworddiv">
+            <div>insert password</div>
+            <textarea name="passwordtextarea" id="passwordtextarea" rows="1"></textarea>
+            <button id="passwdbutton" onclick="checkpasswd();">check</button>
+        </div>
         <div id="titler">
+            
+            
+            <!-- Capa: escrever Portfólio – Life Skills (pode ser criativa e customizada).
+            Contracapa: escrever EU e incluir imagens ou símbolos que representem você.
+            Quem sou eu: colar uma foto sua e escrever um pequeno texto sobre quem você é.
+            Declaração de Missão Pessoal: colar a atividade finalizada hoje, em sala (semana 11/03).
+            O que me representa: cores, símbolos, frases ou músicas importantes para você.
+            Pontos fortes: ex.: criatividade, organização, dedicação.
+            Hobbies: ex.: esportes, música, desenho, leitura.
+            Sonhos: ex.: profissão, objetivos ou lugares que deseja conhecer.
+            Heróis ou ídolos que te inspiram (opcional). -->
+
+
             <p id="finished">não terminei ainda :|</p>
-            <button onclick="window.location.href = 'http://127.0.0.1:5500/docs/index.html'">e</button>
             <h1 id="goodMorning">Bom dia!</h1>
-            <div>Eu sou o Vincenzo, e é<br>um prazer te conhecer!!</div>
+            <div style="font-size: 30px;">PORTIFOLIO DE LIFE SKILLS :3</div>
+            <p>do mewocoolguy/vincenzo</p>
             <image width=300px height=200px src="me.jpg"><br>
             <button class="butn" onclick="nextpart();">proximo</button>
             <p style="font-size: 1500px"></p>
             <p id="theMe"></p>
             <h3><strong style="font-size: 40px">EU</strong></h3>
+            <button onclick="window.location.href = 'http://127.0.0.1:5500/docs/index.html'">e</button>
+            
+            <!-- EU -->
+            <div>Eu sou o Vincenzo, e é<br>um prazer te conhecer!!</div>
             <p>tenho uma empresa chamado Mewo Corporation</p>
             <img src="logo.png" width="130" style="margin-top: 30px" alt="">
             <img src="wallpaper.png" width="200" style="margin-top: 0" alt="">
+            <p>alguns amigos e minha familia: </p>
+            <div>comecando com a minha irma, valentina!!!!</div>
+            <!-- valentina -->
+            <img src="images/IMG_0001.png" width="130" alt="">
+            <img src="images/IMG_0023.png" width="200" alt="">
+            <img src="images/IMG_0067.png" width="130" alt="">
+            <img src="images/IMG_2126.HEIC.png" width="130" alt="">
+            <img src="images/IMG_2652.HEIC.png" width="130" alt="">
+            <!-- dimitri -->
+            <div>meus amigos</div>
+            <img src="images/IMG_1999.HEIC.png" width="130" alt="">
         </div>
     </body>
     
 
-    <!-- ok here is my js code -->
+    <!-- ok here is my sh*tty js code -->
     <script>
+        // my old code from before, any document.getElementById calls
+        // are from before adding the old code with the docID func
+        function docID(abajab) {
+            return document.getElementById(abajab);
+        }
+
+        let finishedEle = docID("finished");
+        let good = docID("goodMorning")
+    
+        let finished = false;
+        finishedEle.hidden = finished;
+
         /// page load millis since unix epoch i think and sleep func
         let pageLoadTime = Date.now();
         function sleep(sleepMilliseconds) {
@@ -33,8 +78,13 @@
             while ( Date.now() - millisStartSleep <= sleepMilliseconds ) { }
             return 0;
         }
-        sleep(100);
         
+        sleep(10);
+        
+        // reload when updating, is for developing with the Live Server vscode extention
+        if ( window.location.href == 'http://127.0.0.1:5500/docs/index.html#theMe' )
+        { window.location.href = 'http://127.0.0.1:5500/docs/index.html' }
+
         /// part management
         
         let currentpart = "title";
@@ -44,6 +94,20 @@
                 window.location.href = window.location.href + "#theMe";
             }
             return 0;
+        }
+        
+        /// add password
+        
+        let portfolioDivElement = document.getElementById("titler");
+        portfolioDivElement.hidden = true;
+        function checkpasswd() {
+            let textarea = document.getElementById("passwordtextarea");
+            let div = document.getElementById("passworddiv");
+            let portfolioDivElement = document.getElementById("titler");
+            console.log(textarea.value);
+            if ( textarea.value == "wowmewo" ) {
+                portfolioDivElement.hidden = false;
+            }
         }
     </script>
     <!-- <script src="https://crazyblue7.github.io/script.js"></script> -->
