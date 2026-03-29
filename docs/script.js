@@ -28,21 +28,24 @@ if ( window.location.href != 'http://127.0.0.1:5500/docs/index.html' && finished
 
 /// part management
 
-let currentpart = "title";
-
 function nextpart(part) {
     if ( part == 1 ) {
         window.location.href = window.location.href + "#theMe";
         window.location.href = window.location.href.replaceAll("#thedeclarationthing","");
-        currentpart == "theMe";
+        window.location.href = window.location.href.replaceAll("#thedeclarationthing","theMe");
     } else if ( part == 2 ) {
         window.location.href = window.location.href.replaceAll("#theMe","#thedeclarationthing");
+        window.location.href = window.location.href.replaceAll("#the-representation-of-me","#thedeclarationthing");
     } else if ( part == 0 ) {
         window.location.href = window.location.href.replaceAll("#theMe","#titler");
     } else if ( part == 3 ) {
         window.location.href = window.location.href.replaceAll("#thedeclarationthing","#the-representation-of-me");
+        window.location.href = window.location.href.replaceAll("#thepointsofstrong","#the-representation-of-me");
     } else if ( part == 4 ) {
         window.location.href = window.location.href.replaceAll("#the-representation-of-me","#thepointsofstrong");
+        window.location.href = window.location.href.replaceAll("#ZEEND","#thepointsofstrong");
+    } else if ( part == 5 ) {
+        window.location.href = window.location.href.replaceAll("#thepointsofstrong","#ZEEND");
     }
     return 0;
 }
