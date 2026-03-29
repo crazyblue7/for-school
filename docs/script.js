@@ -9,7 +9,7 @@ function docID(abajab) {
 let finishedEle = docID("finished");
 let good = docID("goodMorning")
     
-let finished = false;
+let finished = true;
 finishedEle.hidden = finished;
 
 /// page load millis since unix epoch i think and sleep func
