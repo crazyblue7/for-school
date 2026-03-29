@@ -1,11 +1,11 @@
 @font-face {
-    font-family: fonter;
+    font-family: fonty;
     src: url(https://crazyblue7.github.io/websites/font.ttf);
 }
 body {
     background-color: #000;
     font-weight: 700;
-    font-family: fonter;
+    font-family: fonty;
 }
 #titler {
    margin: 20px;
