@@ -24,7 +24,9 @@ sleep(10);
 
 // reload when updating, is for developing with the Live Server vscode extention
 if ( window.location.href != 'http://127.0.0.1:5500/docs/index.html' && finished != true)
-{ window.location.href = 'http://127.0.0.1:5500/docs/index.html' }
+{ window.location.href = 'http://127.0.0.1:5500/docs/index.html' } else
+{ window.location.href = 'https://crazyblue7.github.io/for-school/' }
+
 
 /// part management
 
