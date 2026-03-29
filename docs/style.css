@@ -6,6 +6,7 @@ body {
     background-color: #000;
     font-weight: 700;
     font-family: fonty;
+    scroll-behavior: smooth;
 }
 #titler {
    margin: 20px;

@@ -23,16 +23,24 @@ function sleep(sleepMilliseconds) {
 sleep(10);
 
 // reload when updating, is for developing with the Live Server vscode extention
-if ( window.location.href == 'http://127.0.0.1:5500/docs/index.html#theMe' )
+if ( window.location.href != 'http://127.0.0.1:5500/docs/index.html' && finished != true)
 { window.location.href = 'http://127.0.0.1:5500/docs/index.html' }
 
 /// part management
 
 let currentpart = "title";
 
-function nextpart() {
-    if ( currentpart == "title" ) {
-    window.location.href = window.location.href + "#theMe";
+function nextpart(part) {
+    if ( part == 1 ) {
+        window.location.href = window.location.href + "#theMe";
+        window.location.href = window.location.href.replaceAll("#thedeclarationthing","");
+        currentpart == "theMe";
+    } else if ( part == 2 ) {
+        window.location.href = window.location.href.replaceAll("#theMe","#thedeclarationthing");
+    } else if ( part == 0 ) {
+        window.location.href = window.location.href.replaceAll("#theMe","#titler");
+    } else if ( part == 0 ) {
+        window.location.href = window.location.href.replaceAll("#thedeclarationthing","the-representation-of-me");
     }
     return 0;
 }
