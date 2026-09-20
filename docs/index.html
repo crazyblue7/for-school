@@ -1,149 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfólio</title>
-        <link rel="stylesheet" href="https://crazyblue7.github.io/styling.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="images/Image_20260329_170832_352.jpeg">
-    </head>
-    <body id="portfolio">
-        <div id="passworddiv">
-            <div>insert password</div>
-            <textarea name="passwordtextarea" id="passwordtextarea" rows="1"></textarea>
-            <button id="passwdbutton" onclick="checkpasswd();">check</button>
-        </div>
-        <div id="titler">
-            
-            
-            <!-- Capa: escrever Portfólio – Life Skills (pode ser criativa e customizada).
-            Contracapa: escrever EU e incluir imagens ou símbolos que representem você.
-            Quem sou eu: colar uma foto sua e escrever um pequeno texto sobre quem você é.
-            Declaração de Missão Pessoal: colar a atividade finalizada hoje, em sala (semana 11/03).
-            O que me representa: cores, símbolos, frases ou músicas importantes para você.
-            Pontos fortes: ex.: criatividade, organização, dedicação.
-            Hobbies: ex.: esportes, música, desenho, leitura.
-            Sonhos: ex.: profissão, objetivos ou lugares que deseja conhecer.
-            Heróis ou ídolos que te inspiram (opcional). -->
+	<head>
+		<title>Portfólio</title>
+		<link rel="stylesheet" href="https://crazyblue7.github.io/styling.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="images/Image_20260329_170832_352.jpeg">
+	</head>
+	<body id="portfolio">
+		<div id="passworddiv">
+			<div>insert password</div>
+			<textarea name="passwordtextarea" id="passwordtextarea" rows="1"></textarea>
+			<button id="passwdbutton" onclick="checkpasswd();">check</button>
+		</div>
+		<div id="titler">
+			
+			
+			<!-- Capa: escrever Portfólio – Life Skills (pode ser criativa e customizada).
+			Contracapa: escrever EU e incluir imagens ou símbolos que representem você.
+			Quem sou eu: colar uma foto sua e escrever um pequeno texto sobre quem você é.
+			Declaração de Missão Pessoal: colar a atividade finalizada hoje, em sala (semana 11/03).
+			O que me representa: cores, símbolos, frases ou músicas importantes para você.
+			Pontos fortes: ex.: criatividade, organização, dedicação.
+			Hobbies: ex.: esportes, música, desenho, leitura.
+			Sonhos: ex.: profissão, objetivos ou lugares que deseja conhecer.
+			Heróis ou ídolos que te inspiram (opcional). -->
 
 
-            <p id="finished">não terminei ainda :|</p>
-            <h1 id="goodMorning">Bom dia!</h1>
-            <div style="font-size: 30px;">PORTFOLIO DE LIFE SKILLS :3</div>
-            <p>do mewocoolguy/vincenzo</p>
-            <image width=300px height=200px src="me.png"><br>
-            <img src="images/Image_20260329_170832_352.jpeg" width="230" height="214" alt="">
-            <button class="butn" onclick="nextpart(1);">próximo</button>
-            <p style="font-size: 1500px"></p>
-            <button onclick="nextpart(0);">ir pra cima</button>
-            <p id="theMe"></p>
-            <h3><strong style="font-size: 40px">EU</strong></h3>
-            
-            <!-- EU -->
-            <div>Eu sou o Vincenzo e é um prazer te conhecer!</div>
-            <p>Tenho uma empresa chamado Mewo Corporation</p>
-            <img src="logo.png" width="130" style="margin-top: 30px" alt="">
-            <img src="wallpaper.png" width="200" style="margin-top: 0" alt="">
-            <p>Alguns amigos e minha família: </p>
-            <div>Começando com a minha irmã, Valentina! </div>
-            <!-- valentina -->
-            <img src="images/IMG_0001.png" width="170" alt="">
-            <img src="images/IMG_0023.png" height="214" alt="">
-            <img src="images/IMG_0067.png" width="170" alt="">
-            <img src="images/IMG_2126.HEIC.png" width="170" alt="">
-            <img src="images/IMG_2652.HEIC.png" width="170" alt="">
-            <!-- amiguinhos -->
-            <div>Meus amigos:</div>
-            <img src="images/IMG_1999.HEIC.png" width="170" alt="">
-            <img src="images/1000421740.jpeg" width="170" alt="">
-            <img src="images/1000421743.jpeg" width="170" alt="">
-            <img src="images/1000421746.jpeg" height="214" alt="">
-            <img src="images/1000421749.jpeg" width="170" alt=""><br>
-            <button class="butn" onclick="nextpart(2);">próximo</button>
-            <p style="font-size: 1500px"></p>
-            <button onclick="nextpart(1);">ir pra cima</button>
-            <p id="thedeclarationthing"></p>
-            <h3><strong style="font-size: 40px">DECLARAÇÃO DE MISSÃO PESSOAL</strong></h3>
-            
-            <!-- DECLARACAO -->
-            <p>Minha declaração de missão pessoal é:</p>
-            <p><i>Ajudar as pessoas com problemas relacionados à tecnologia,<br>
-                respeitar as pessoas sempre e ser uma boa pessoa.</i></p>
-            <!-- <p>Obrigado por ler aquilo que fiz agorinha.</p> -->
-            
+			<p id="finished">não terminei ainda :|</p>
+			<h1 id="goodMorning">Bom dia!</h1>
+			<div style="font-size: 30px;">PORTFOLIO DE LIFE SKILLS :3</div>
+			<p>do mewocoolguy/vincenzo</p>
+			<image width=300px height=200px src="me.png"><br>
+			<img src="images/Image_20260329_170832_352.jpeg" width="230" height="214" alt="">
+			<button class="butn" onclick="gotopart(1);">próximo</button>
+			<p style="font-size: 1500px"></p>
+			<button onclick="gotopart(0);">ir pra cima</button>
+			<p id="theMe"></p>
+			<h3><strong style="font-size: 40px">EU</strong></h3>
+			
+			<!-- EU -->
+			<div>Eu sou o Vincenzo e é um prazer te conhecer!<br>
+			     Tenho uma empresa chamado Mewo Corporation</div>
+			<img src="logo.png" width="130" style="margin-top: 30px" alt="">
+			<img src="wallpaper.png" width="200" style="margin-top: 0" alt="">
+			<p>Tambem tenho adhd (TDAH) e autismo (1° grau).<br>
+			   Alguns amigos e minha família: </p>
+			<div>Começando com a minha irmã, Valentina! </div>
+			<!-- valentina -->
+			<img src="images/IMG_0001.png" width="170" alt="">
+			<img src="images/IMG_0023.png" height="214" alt="">
+			<img src="images/IMG_0067.png" width="170" alt="">
+			<img src="images/IMG_2126.HEIC.png" width="170" alt="">
+			<img src="images/IMG_2652.HEIC.png" width="170" alt="">
+			<!-- amiguinhos -->
+			<div>Meus amigos:</div>
+			<img src="images/IMG_1999.HEIC.png" width="170" alt="">
+			<img src="images/1000421740.jpeg" width="170" alt="">
+			<img src="images/1000421743.jpeg" width="170" alt="">
+			<img src="images/1000421746.jpeg" height="214" alt="">
+			<img src="images/1000421749.jpeg" width="170" alt=""><br>
 
-            <!-- Capa: escrever Portfólio – Life Skills (pode ser criativa e customizada).
-            Contracapa: escrever EU e incluir imagens ou símbolos que representem você.
-            Quem sou eu: colar uma foto sua e escrever um pequeno texto sobre quem você é.
-            Declaração de Missão Pessoal: colar a atividade finalizada hoje, em sala (semana 11/03).
-            O que me representa: cores, símbolos, frases ou músicas importantes para você.
-            Pontos fortes: ex.: criatividade, organização, dedicação.
-            Hobbies: ex.: esportes, música, desenho, leitura.
-            Sonhos: ex.: profissão, objetivos ou lugares que deseja conhecer.
-            Heróis ou ídolos que te inspiram (opcional). -->
-            
+			<button class="butn" onclick="gotopart(2);">próximo</button>
+			<p style="font-size: 1500px"></p>
+			<button onclick="gotopart(1);">ir pra cima</button>
+			<p id="thedeclarationthing"></p>
+			<h3><strong style="font-size: 40px">DECLARAÇÃO DE MISSÃO PESSOAL</strong></h3>
+			
+			<!-- DECLARACAO -->
+			<p>Minha declaração de missão pessoal é:</p>
+			<p style="max-width: 36%; margin-left: 32%;">
+			<i>Ajudar as pessoas com problemas relacionados à tecnologia,
+				respeitar as pessoas sempre e ser uma boa pessoa.</i></p>
+			<!-- <p>Obrigado por ler aquilo que fiz agorinha.</p> -->
+			
 
-            <button class="butn" onclick="nextpart(3);">próximo</button>
-            <p style="font-size: 1500px"></p>
-            <button onclick="nextpart(2);">ir pra cima</button>
-            <p id="the-representation-of-me"></p>
-            <h3><strong style="font-size: 40px">O QUE ME REPRESENTA</strong></h3>
-            
-            <!-- representacao -->
-            <p>Aqui o que me representa, de acordo com minha irmã e eu:</p>
-            <!-- put images here -->
-            <img src="images/Image_20260329_170832_267.jpeg" width="170" height="214" alt="">
-            <img src="https://crazyblue7.github.io/websites/ooooo-teasty-teasty/sadguy.png" width="170" height="214" alt="">
-            <img src="images/Image_20260329_170832_352.jpeg" width="230" height="214" alt="">
-            <img src="images/Image_20260329_170832_304.jpeg" height="214" alt="">
-            <img src="images/20260329_17h52m54s_grim.png" width="230" height="214" alt="">
-            <img src="images/SAVE ME.png" height="21" alt="">
+			<!-- Capa: escrever Portfólio – Life Skills (pode ser criativa e customizada).
+			Contracapa: escrever EU e incluir imagens ou símbolos que representem você.
+			Quem sou eu: colar uma foto sua e escrever um pequeno texto sobre quem você é.
+			Declaração de Missão Pessoal: colar a atividade finalizada hoje, em sala (semana 11/03).
+			O que me representa: cores, símbolos, frases ou músicas importantes para você.
+			Pontos fortes: ex.: criatividade, organização, dedicação.
+			Hobbies: ex.: esportes, música, desenho, leitura.
+			Sonhos: ex.: profissão, objetivos ou lugares que deseja conhecer.
+			Heróis ou ídolos que te inspiram (opcional). -->
+			
 
-            <br>
-            <button class="butn" onclick="nextpart(4);">próximo</button>
-            <p style="font-size: 1500px"></p>
-            <button onclick="nextpart(3);">ir pra cima</button>
-            <p id="thepointsofstrong"></p>
-            <h3><strong style="font-size: 40px">PONTOS FORTES</strong></h3>
-            
-            <!-- strong points -->
-            <p>meus pontos fortes:</p>
-            <p>• criativo<!-- <div style="font-size: 10px;">(?)</div> --></p>
-            <p>• bom de código para fazer um site</p>
-            <p>• respeitoso com as pessoas</p>
-            <p>• determinado em fazer as coisas que eu quero</p>
-            <p>• carinhoso com a minha família e os meus amigos</p>
-            
+			<button class="butn" onclick="gotopart(3);">próximo</button>
+			<p style="font-size: 1500px"></p>
+			<button onclick="gotopart(2);">ir pra cima</button>
+			<p id="the-representation-of-me"></p>
+			<h3><strong style="font-size: 40px">O QUE ME REPRESENTA</strong></h3>
+			
+			<!-- representacao -->
+			<p>Aqui o que me representa, de acordo com minha irmã e eu:</p>
+			<!-- put images here -->
+			<div id="imgtxtcon">
+				<div class="imgtxt">
+					<img src="images/Image_20260329_170832_267.jpeg" width="170" height="214" alt="">
+					<p>eu!!</p>
+				</div>
+				<div class="imgtxt">
+					<img src="https://crazyblue7.github.io/websites/ooooo-teasty-teasty/sadguy.png" width="170" height="214" alt="">
+					<p>musica!!</p>
+				</div>
+				<div class="imgtxt">
+					<img src="images/Image_20260329_170832_352.jpeg" width="230" height="214" alt="">
+					<p>diversão!!</p>
+				</div>
+				<div class="imgtxt">
+					<img src="images/Image_20260329_170832_304.jpeg" height="214" alt="">
+					<p>eu de novo!!</p>
+					</div>
+				<div class="imgtxt">
+					<img src="images/20260329_17h52m54s_grim.png" width="230" height="214" alt="">
+					<p>programação!!</p>
+				</div>
+				<div class="imgtxt">
+					<img src="images/SAVE ME.png" height="21" alt="">
+					<p>uh</p>
+				</div>
+			</div>
 
-            <h3><strong style="font-size: 40px">HOBBIES</strong></h3>
-            
-            <!-- hobbius -->
-            <p>meus hobbies:</p>
-            <p>• código</p>
-            <p>• jogar jogos como geometry dash e celeste</p>
-            <p>• usar meu computador</p>
-            
-            <h3><strong style="font-size: 40px">SONHOS</strong></h3>
-            
-            <!-- dreamer -->
-            <p>meus sonhos:</p>
-            <p>• ser um programador bom</p>
-            <p>• ser bom em jogos de plataforma</p>
-            <p>• ser uma pessoa legal</p>
-            
-            <br>
-            <button class="butn" onclick="nextpart(5);">próximo</button>
-            <p style="font-size: 1500px"></p>
-            <button onclick="nextpart(4);">ir pra cima</button>
-            <p id="ZEEND"></p>
-            <h3><strong style="font-size: 40px">OBRIGADO POR VER O MEU PORTFOLIO!!!!!!!!!!!!</strong></h3>
-        </div>
-    </body>
-    
+			<br>
+			<button class="butn" onclick="gotopart(4);">próximo</button>
+			<p style="font-size: 1500px"></p>
+			<button onclick="gotopart(3);">ir pra cima</button>
+			<p id="thepointsofstrong"></p>
+			<h3><strong style="font-size: 40px">PONTOS FORTES</strong></h3>
+			
+			<!-- strong points -->
+			<p>meus pontos fortes:</p>
+			<p>• criativo<!-- <div style="font-size: 10px;">(?)</div> --></p>
+			<p>• bom de código para fazer um site</p>
+			<p>• respeitoso com as pessoas</p>
+			<p>• determinado em fazer as coisas que eu quero</p>
+			<p>• carinhoso com a minha família e os meus amigos</p>
+			
 
-    
+			<h3><strong style="font-size: 40px">HOBBIES</strong></h3>
+			
+			<!-- hobbius -->
+			<p>meus hobbies:</p>
+			<p>• código</p>
+			<p>• jogar jogos como geometry dash e celeste</p>
+			<p>• usar meu computador</p>
+			
+			<h3><strong style="font-size: 40px">SONHOS</strong></h3>
+			
+			<!-- dreamer -->
+			<p>meus sonhos:</p>
+			<p>• ser um programador bom</p>
+			<p>• ser bom em jogos de plataforma</p>
+			<p>• ser uma pessoa legal</p>
+			
+			<br>
+			<button class="butn" onclick="gotopart(5);">próximo</button>
+			<p style="font-size: 1500px"></p>
+			<button onclick="gotopart(4);">ir pra cima</button>
+			<p id="ZEEND"></p>
 
-    <!-- ok here is my probably shitty js code being linked, was previously here but was moved to a file in commit ea88a8c1d4aaa1eab263767c749ac9650a3b9bc3 -->
-    <script src="script.js"></script>
-    <!-- <script src="https://crazyblue7.github.io/script.js"></script> -->
-     <!-- <script src="../../crazyblue7.github.io/script.js"></script> -->
+			<!-- the end. -->
+			<h3><strong style="font-size: 40px">O FINAL</strong></h3>
+			<br>
+			<h3><strong style="font-size: 40px">OBRIGADO POR VER O MEU PORTFOLIO!!!!!!!!!!!!</strong></h3>
+		</div>
+	</body>
+	
+
+	
+
+	<!-- ok here is my probably shitty js code being linked, was previously here but was moved to a file in commit ea88a8c1d4aaa1eab263767c749ac9650a3b9bc3 -->
+	<script src="script.js"></script>
+	<!-- <script src="https://crazyblue7.github.io/script.js"></script> -->
+	 <!-- <script src="../../crazyblue7.github.io/script.js"></script> -->
 </html>

@@ -8,6 +8,8 @@ function docID(abajab) {
 
 let finishedEle = docID("finished");
 let good = docID("goodMorning")
+
+let basePage = "";
     
 let finished = true;
 finishedEle.hidden = finished;
@@ -17,37 +19,26 @@ let pageLoadTime = Date.now();
 function sleep(sleepMilliseconds) {
     let millisStartSleep = Date.now();
     while ( Date.now() - millisStartSleep <= sleepMilliseconds ) { }
-    return 0;
+    return;
 }
 
 sleep(10);
 
-// reload when updating, is for developing with the Live Server vscode extention
-if ( window.location.href != 'http://127.0.0.1:5500/docs/index.html' && finished != true)
-{ window.location.href = 'http://127.0.0.1:5500/docs/index.html' } /*else
-{ window.location.href = 'https://crazyblue7.github.io/for-school/' }*/
-
-
 /// part management
 
-function nextpart(part) {
+function gotopart(part) {
     if ( part == 1 ) {
-        window.location.href = window.location.href + "#theMe";
-        window.location.href = window.location.href.replaceAll("#thedeclarationthing","");
-        window.location.href = window.location.href.replaceAll("#thedeclarationthing","theMe");
+        window.location.href = basePage + "#theMe";
     } else if ( part == 2 ) {
-        window.location.href = window.location.href.replaceAll("#theMe","#thedeclarationthing");
-        window.location.href = window.location.href.replaceAll("#the-representation-of-me","#thedeclarationthing");
+        window.location.href = basePage + "#thedeclarationthing";
     } else if ( part == 0 ) {
-        window.location.href = window.location.href.replaceAll("#theMe","#titler");
+        window.location.href = basePage + "#titler";
     } else if ( part == 3 ) {
-        window.location.href = window.location.href.replaceAll("#thedeclarationthing","#the-representation-of-me");
-        window.location.href = window.location.href.replaceAll("#thepointsofstrong","#the-representation-of-me");
+        window.location.href = basePage + "#the-representation-of-me";
     } else if ( part == 4 ) {
-        window.location.href = window.location.href.replaceAll("#the-representation-of-me","#thepointsofstrong");
-        window.location.href = window.location.href.replaceAll("#ZEEND","#thepointsofstrong");
+        window.location.href = basePage + "#thepointsofstrong";
     } else if ( part == 5 ) {
-        window.location.href = window.location.href.replaceAll("#thepointsofstrong","#ZEEND");
+        window.location.href = basePage + "#ZEEND";
     }
     return 0;
 }
@@ -64,5 +55,6 @@ function checkpasswd() {
     if ( textarea.value == "wowmewo" ) {
         portfolioDivElement.hidden = false;
         div.hidden = true;
+        basePage = window.location.href;
     }
 }
