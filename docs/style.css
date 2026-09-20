@@ -28,5 +28,7 @@ body {
 }
 .imgtxt {
 	width: 230px;
+}
+.imgtxt div {
 	display: inline-block;
 }
