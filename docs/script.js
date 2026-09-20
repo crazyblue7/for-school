@@ -38,6 +38,8 @@ function gotopart(part) {
     } else if ( part == 4 ) {
         window.location.href = basePage + "#thepointsofstrong";
     } else if ( part == 5 ) {
+        window.location.href = basePage + "#credobolotos";
+    } else if ( part == 6 ) {
         window.location.href = basePage + "#ZEEND";
     }
     return 0;
